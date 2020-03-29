@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    /* background-color: #2A2C39;*/
+    background-color: #32324e;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 200;
+    font-size: 13px;
+    height: 100vh;
+}
+
+.page { display: none; }
+
+#map {
+    width: 100vw;
+    height: 100vh;
+    max-height: 10px;
+    z-index: 0;
+}
+
+#infos {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    background-color: white;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+}
+
+.background {
+    fill: none;
+    pointer-events: all;
+}
+
+.regions { display: block; }
+
+#regions .active { display: none; }
+
+#regions-borders {
+    fill: none;
+    stroke: #2A2C39;
+    stroke-width: 1px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    pointer-events: none;
+}
+
+.provinces {
+    stroke: #2A2C39;
+    stroke-width: .3px;
+}
+
+div {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+p { display: table-header-group; }
+
+.ProvLabel {
+    font-size: 5px;
+    font-weight: 400;
+    display: none;
+    fill: rgb(230, 195, 0);
+}
+
+.regionsLabel { font-weight: 400; }
+
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(192, 192, 192, 0.5);
+    background-image: url("https://i.stack.imgur.com/MnyxU.gif");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
