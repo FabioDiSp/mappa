@@ -92,12 +92,12 @@ var promises = [
         var x = new Array(9);
         x = [d.terapia_intensiva, //[0]
         d.totale_ospedalizzati, //[1]
-        d.totale_attualmente_positivi, //[2]
-        d.nuovi_attualmente_positivi, //[3]
+        d.totale_positivi, //[2]
+        d.variazione_totale_positivi, //[3]
         d.dimessi_guariti, //[4]
         d.deceduti, //[5]
         d.totale_casi, //[6]
-        parseFloat(d.nuovi_attualmente_positivi / d.totale_attualmente_positivi * 100).toPrecision(2),
+        parseFloat(d.variazione_totale_positivi / d.totale_positivi * 100).toPrecision(2),
         d.data
         ];
         datiRegionali.set(d.codice_regione, x);
@@ -107,8 +107,8 @@ var promises = [
     d3.csv("https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale-latest.csv", function (d) {
         datiNazionali = [d.terapia_intensiva,
         d.totale_ospedalizzati,
-        d.totale_attualmente_positivi,
-        d.nuovi_attualmente_positivi,
+        d.totale_positivi,
+        d.variazione_totale_positivi,
         d.dimessi_guariti,
         d.deceduti,
         d.totale_casi,
