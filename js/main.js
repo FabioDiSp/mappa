@@ -93,7 +93,7 @@ var promises = [
         x = [d.terapia_intensiva, //[0]
         d.totale_ospedalizzati, //[1]
         d.totale_positivi, //[2]
-        d.variazione_totale_positivi, //[3]
+        d.nuovi_positivi, //[3]
         d.dimessi_guariti, //[4]
         d.deceduti, //[5]
         d.totale_casi, //[6]
@@ -108,7 +108,7 @@ var promises = [
         datiNazionali = [d.terapia_intensiva,
         d.totale_ospedalizzati,
         d.totale_positivi,
-        d.variazione_totale_positivi,
+        d.nuovi_positivi,
         d.dimessi_guariti,
         d.deceduti,
         d.totale_casi,
