@@ -97,7 +97,7 @@ var promises = [
         d.dimessi_guariti, //[4]
         d.deceduti, //[5]
         d.totale_casi, //[6]
-        parseFloat(d.variazione_totale_positivi / d.totale_positivi * 100).toPrecision(2),
+        parseFloat(d.nuovi_positivi / d.totale_positivi * 100).toPrecision(2),
         d.data
         ];
         datiRegionali.set(d.codice_regione, x);
