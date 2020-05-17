@@ -86,7 +86,7 @@ svg.append('rect')
     .on('click', clicked);
 
 var promises = [
-    d3.json("https://raw.githubusercontent.com/FabioDiSp/betamap/master/italy.json"),
+    d3.json("https://raw.githubusercontent.com/FabioDiSp/mappa/master/1-italy.json?token=AL6B22FBZMEWSDN764TIQHK6YFYK2"),
     d3.csv("https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-province/dpc-covid19-ita-province-latest.csv", function (d) { datiProv.set(d.codice_provincia, d.totale_casi); }),
     d3.csv("https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-regioni/dpc-covid19-ita-regioni-latest.csv", function (d) {
         var x = new Array(9);
