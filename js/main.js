@@ -29,7 +29,7 @@ var increaseperc = 0;
 let scale = 6;
 
 var color = d3.scaleThreshold()
-    .domain([100, 250, 500, 750, 1000, 2000, 5000, 10000])
+    .domain([500, 1000, 3000, 6000, 10000, 30000, 60000, 90000])
     .range(d3.schemeReds[9]);
 
 var provColor = d3.scaleThreshold()
